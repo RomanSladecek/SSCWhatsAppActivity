@@ -49,7 +49,7 @@ NSString * const SSCActivityTypePostToWhatsApp = @"io.evolved.activity.postToWha
     return @"WhatsApp";
 }
 
-- (UIImage *)activityImage {
+- (UIImage *)_activityImage {
     if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
         return [UIImage imageNamed:@"SSCWhatsAppIcon-iOS6"];
     } else if(floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_7_1){
